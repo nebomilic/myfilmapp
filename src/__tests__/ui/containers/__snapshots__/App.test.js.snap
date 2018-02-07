@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders corectly 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="browse-grid"
+  >
+    <div
+      className="top-controls"
+    >
+      <select
+        name="category"
+      >
+        <option
+          value="all"
+        >
+          All
+        </option>
+        <option
+          value="comedy"
+        >
+          Comedy
+        </option>
+        <option
+          value="action"
+        >
+          Action
+        </option>
+        <option
+          value="horror"
+        >
+          Horror
+        </option>
+        <option
+          value="scifi"
+        >
+          Sci-Fi
+        </option>
+        <option
+          value="drama"
+        >
+          Drama
+        </option>
+      </select>
+    </div>
+    <div
+      className="film-grid-item"
+    >
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyOTE4NjE0M15BMl5BanBnXkFtZTgwMzcxMzY1NDM@._V1_UX67_CR0,0,67,98_AL_.jpg"
+      />
+      <p>
+        8.6
+      </p>
+      <h4>
+        Altered Carbon
+      </h4>
+      <p>
+        Set in a future where consciousness is digitized and stored, a prisoner returns to life in a new body and must solve a mind-bending murder to win his freedom.
+      </p>
+    </div>
+    <div
+      className="film-grid-item"
+    >
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTEwYzNiMGUtNzRlYS00MTMzLTliNzgtOGUxZGZiNThlNWYwXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX67_CR0,0,67,98_AL_.jpg"
+      />
+      <p>
+        8.9
+      </p>
+      <h4>
+        Black Mirror
+      </h4>
+      <p>
+        An anthology series exploring a twisted, high-tech world where humanitys greatest innovations and darkest instincts collide.
+      </p>
+    </div>
+    <div
+      className="film-grid-item"
+    >
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_UX67_CR0,0,67,98_AL_.jpg"
+      />
+      <p>
+        8.0
+      </p>
+      <h4>
+         Thor: Ragnarok 
+      </h4>
+      <p>
+        Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his homeworld and the end 
+      </p>
+    </div>
+    <div
+      className="film-grid-item"
+    >
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BZTQzNmEwZTMtZGNkNC00YjQ5LThhYzMtZTBhNzUzODI5ZjRjXkEyXkFqcGdeQXVyMjM5NzU3OTM@._V1_UY98_CR5,0,67,98_AL_.jpg"
+      />
+      <p>
+        8.0
+      </p>
+      <h4>
+        The Flash
+      </h4>
+      <p>
+        After being struck by lightning, Barry Allen wakes up from his coma to discover hes been given the power of super speed, becoming the Flash, fighting crime in Central City.
+      </p>
+    </div>
+  </div>
+</div>
+`;

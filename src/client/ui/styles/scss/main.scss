@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'animations';
+@import 'values';
+@import 'utility';
+
+html{
+    height: 100%;    
+    font-size: $font-size-normal;
+    background: $color-3;
+}
+
+body {
+    color: $white;
+    min-width:320px; /* suppose you want minimun width of 320px */
+    width: auto ;  /* Firefox will set width as auto */
+    height: 100%;
+    width: 100%;   
+    min-width: 320px;
+    font-family: $primary-font;
+    overflow-x: hidden;
+    background: linear-gradient($color-2, $color-1, $color-3);
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px white;
+}
+
+.browse-grid {
+    width: 100%;
+}
+
+footer {
+    font-size: $font-size-small;
+    text-align: center;
+    grid-column: 1 / -1;
+    color: $transparent-white-text;
+    margin-top: -15px;
+    padding-top: 25px;
+    background: $color-4;
+
+    a, a:visited {
+        color: $transparent-white-text;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: rgba($white, 0.6);
+        text-decoration: none;
+    }
+    
+}

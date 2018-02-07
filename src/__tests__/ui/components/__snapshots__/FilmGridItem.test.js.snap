@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders corectly 1`] = `
+<div
+  className="film-grid-item"
+>
+  <img
+    src={undefined}
+  />
+  <p />
+  <h4 />
+  <p />
+</div>
+`;

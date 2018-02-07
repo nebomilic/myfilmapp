@@ -1,0 +1,26 @@
+//@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+  
+.the-icons {
+  font-size: 25px;
+}
+
+//$primary-font: 'Dosis', Helvetica Neue,sans-serif;
+$primary-font: 'Quicksand', Helvetica Neue,sans-serif;
+$white: white;
+$transparent-white-bg: rgba(255, 255, 255, 0.05);
+$transparent-white-text: rgba(255, 255, 255, 0.6);
+$transparent-white-bg-2: rgba(255, 255, 255, 0.2);
+$font-size-normal: 24px;
+$font-size-bigger: 1.414rem;
+$font-size-biggest: 1.999rem;
+$font-size-small: 0.707rem;
+$text-alpha: 0.6;
+
+// nice tool for color gradients http://www.colinkeany.com/blend/
+// colors used mostly for body backgrounds and gradients
+$color-2: #a3bded;
+$color-1: #8aa7ce;
+$color-3: #3a66a0;
+$color-4: #285794;
