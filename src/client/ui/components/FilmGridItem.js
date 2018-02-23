@@ -16,7 +16,7 @@ const FilmGridItem = ({title, image, rating, description}) => {
 FilmGridItem.propTypes = {
     title: PropTypes.string,
     image: PropTypes.string,
-    rating: PropTypes.string,
+    rating: PropTypes.number,
     description: PropTypes.string,
 };
 

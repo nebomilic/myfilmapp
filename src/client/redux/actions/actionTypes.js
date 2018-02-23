@@ -1,4 +1,6 @@
 export const GET_FILMS = 'GET_FILMS';
+export const GET_FILMS_SUCCESS = 'GET_FILMS_SUCCESS';
+export const GET_FILMS_FAIL = 'GET_FILMS_FAIL';
 export const GET_NEXT_RESULTS = 'GET_NEXT_RESULTS';
 export const CHANGE_SORT = 'CHANGE_SORT';
 export const ADD_TO_FAVORITES = 'ADD_TO_FAVORITES';

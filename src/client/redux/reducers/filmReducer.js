@@ -1,5 +1,6 @@
-export default function reducer(state={    
-    filmList: [],
+import * as actionTypes from '../actions/actionTypes';
+export default function reducer(state={     
+    films: [],
     selectedGenre: [],
     sort: {},
     allGenres: [
@@ -22,8 +23,16 @@ export default function reducer(state={
     ],
     isLoading: true,
     loadingError: false
+}, action){
+    switch (action.type) {
+    case actionTypes.GET_FILMS_SUCCESS: {
+        return {
+            ...state,
+            films: action.payload.results,
+            isLoading: false        
+        };
+    }
 
-    //TO-DO: figure out what state should look like here
-}){
+    }
     return state;
 }
