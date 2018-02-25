@@ -7,8 +7,10 @@ exports[`renders corectly 1`] = `
   <img
     src={undefined}
   />
-  <p />
-  <h4 />
+  <h4>
+       [ 
+     ]
+  </h4>
   <p />
 </div>
 `;

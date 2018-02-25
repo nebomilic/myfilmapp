@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/actionTypes';
 import {fetchFilms} from '../service';
 
 
-function* getFilmsByCategory() {  
+export function* getFilmsByCategory() {  
     try {        
         const result = yield call(fetchFilms);                
         yield put({type: actionTypes.GET_FILMS_SUCCESS, payload: result});
@@ -23,6 +23,7 @@ function* watchGetFilms() {
 // single entry point to start all Sagas at once
 export default function* rootSaga() {
     yield all([
-        watchGetFilms()
+        watchGetFilms(),
+        getFilmsByCategory()
     ]);
 }
