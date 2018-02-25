@@ -5,8 +5,7 @@ const FilmGridItem = ({title, image, rating, description}) => {
     return (
         <div className='film-grid-item'>
             <img src={image} />
-            <p>{rating}</p>
-            <h4>{title}</h4>
+            <h4>{title}   [ {rating} ]</h4>
             <p>{description}</p>            
         </div>  
 

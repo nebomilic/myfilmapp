@@ -2,11 +2,12 @@
 @import 'animations';
 @import 'values';
 @import 'utility';
+//@import 'background';
 
 html{
     height: 100%;    
     font-size: $font-size-normal;
-    background: $color-3;
+    background: $color-1;
 }
 
 body {
@@ -18,7 +19,8 @@ body {
     min-width: 320px;
     font-family: $primary-font;
     overflow-x: hidden;
-    background: linear-gradient($color-2, $color-1, $color-3);
+    // background: linear-gradient($color-2, $color-1, $color-3);
+    background: $color-1;
 }
 
 .content {
@@ -30,6 +32,38 @@ body {
 
 .browse-grid {
     width: 100%;
+    box-shadow: rgba(black, 0.15) 0px 10px 28px 0px;
+    
+}
+
+.film-grid-item {
+    width:100%;
+    display: flow-root;
+    background: rgba(black, 0.02);
+    border-bottom: 2px solid rgba(black, 0.1);
+    
+    // margin-bottom: 1px;
+
+    img{
+        float:left;
+    }
+
+    img:after{
+        clear: both;
+    }
+
+    h4{
+       font-weight: bold;
+       margin-left: 5px;       
+       font-size: 1.5em;
+    }
+
+    p {
+
+        margin-left: 5px;        
+        font-size: 1.2em;
+      
+    }
 }
 
 footer {
