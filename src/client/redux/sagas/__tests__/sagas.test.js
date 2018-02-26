@@ -1,19 +1,26 @@
-// import * as api from '../index'
-// import { expectSaga } from 'redux-saga-test-plan';
-// import * as actionTypes from '../../actions/actionTypes';
+import { put, call } from 'redux-saga/effects';
+import { cloneableGenerator } from 'redux-saga/utils';
+import {getFilmsByCategory as getFilmsByCategoryActionCreator,
+        getFilmsByCategoryFail as getFilmsByCategoryFailActionCreator,
+        getFilmsByCategorySuccess as getFilmsByCategorySuccessActionCreator} from '../../actions';
+import {getFilmsByCategory as getFilmsByCategorySaga} from '../../sagas';
+import {fetchFilms} from '../../service';
 
-// it('just works!', () => {
+const getFilmsAction = getFilmsByCategoryActionCreator();
 
-//   return expectSaga(getFilmsByCategory, api)
-//     // Assert that the `put` will eventually happen.
-//     .put({
-//       type: actionTypes.GET_FILMS_SUCCESS,
-//       payload: {  },
-//     })
+describe('++++ Getting films by category', () => {
+  const generator = cloneableGenerator(getFilmsByCategorySaga)(getFilmsAction);
+  expect(generator.next().value).toEqual(call(fetchFilms));
 
-//     // Dispatch any actions that the saga will `take`.
-//     .dispatch({ type: actionTypes.GET_FILMS })
-
-//     // Start the test. Returns a Promise.
-//     .run();
-// });
+  test('+++ Getting films SUCCESS +++', () => {
+    const clone = generator.clone();
+    const expected = {result: 'awesome'};
+    expect(clone.next(expected).value).toEqual(put(getFilmsByCategorySuccessActionCreator(expected)));
+    expect(clone.next().done).toEqual(true);
+  });
+  // test('+++ Getting films FAILED +++', () => {
+  //   const clone = generator.clone();
+  //   expect(clone.next(false).value).toEqual(put(getFilmsByCategoryFailActionCreator()));
+  //   expect(clone.next().done).toEqual(true);
+  // });
+});

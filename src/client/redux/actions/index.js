@@ -4,6 +4,14 @@ export const getFilmsByCategory = () => {
     return ({type:actionTypes.GET_FILMS});
 };
 
+export const getFilmsByCategorySuccess = (payload) => {
+    return ({type:actionTypes.GET_FILMS_SUCCESS, payload: payload});
+};
+
+export const getFilmsByCategoryFail = () => {
+    return ({type:actionTypes.GET_FILMS_FAIL});
+};
+
 export const getNextPageOfResults = () => {
     return ({type:actionTypes.GET_NEXT_RESULTS});
 };
