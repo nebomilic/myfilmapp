@@ -1,8 +1,8 @@
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+ const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var extractPlugin = new ExtractTextPlugin({
     filename: 'main.css'
@@ -50,17 +50,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.template',
             inject: 'body'
-        }),
-        extractPlugin,
-        new CopyWebpackPlugin([
-            { from: './src/client/ui/styles/assets', to: 'assets' }
-        ]),
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-                API_KEY: JSON.stringify(process.env.API_KEY)
-            }
-        })  
+         })
+        ,
+        extractPlugin
+        // new CopyWebpackPlugin([
+        //     { from: './src/client/ui/styles/assets', to: 'assets' }
+        // ]),
+        // new webpack.DefinePlugin({
+        //     'process.env': {
+        //         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        //         API_KEY: JSON.stringify(process.env.API_KEY)
+        //     }
+        // })
     ]
 };
 

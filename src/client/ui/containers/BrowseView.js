@@ -12,20 +12,18 @@ class BrowseView extends Component {
     }
 
     render() {
-        return (
-            <div className='content'>
-                <div className='browse-grid'>
-                    <TopControls />
-                    {this.props.films.map((item, i) =>                        
-                        <FilmGridItem key={i}
-                            image={'https://image.tmdb.org/t/p/w185_and_h278_bestv2' + item.poster_path} 
-                            title={item.original_title} 
-                            rating={item.vote_average} 
-                            description={item.overview} />                
-                    )}                  
-                </div>
-            </div>  
-        );
+        return <div className='content'>
+            <div className='browse-grid'>
+                <TopControls/>
+                {this.props.films.map((item, i) =>
+                    <FilmGridItem key={i}
+                        image={'https://image.tmdb.org/t/p/w185_and_h278_bestv2' + item.poster_path}
+                        title={item.original_title}
+                        rating={item.vote_average}
+                        description={item.overview}/>
+                )}
+            </div>
+        </div>;
     }
 }
 
